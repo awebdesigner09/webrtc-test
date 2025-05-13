@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebRTC Demo</title>
+    <style>
+    button {
+        padding: 8px 16px;
+        margin: 0 8px;
+        cursor: pointer;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+    }
+    video {
+        width: 640px;
+        height: 480px;
+        margin: 1em;
+        background: #ddd;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 640px);
+        gap: 1em;
+    }
+    </style>
+</head>
+<body>
+    <h1>WebRTC Demo</h1>
+    <div class="grid">
+        <div>
+            <h2>Local Video</h2>
+            <video id="localVideo" autoplay playsinline></video>
+        </div>
+        <div>
+            <h2>Remote Video</h2>
+            <video id="remoteVideo" autoplay playsinline></video>
+        </div>
+    </div>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script src="client.js"></script>
+</body>
+</html>

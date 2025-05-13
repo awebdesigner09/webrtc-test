@@ -1,4 +1,6 @@
+aiortc
 fastapi
 uvicorn
-websockets
+python-multipart
+aiofiles
 jinja2
